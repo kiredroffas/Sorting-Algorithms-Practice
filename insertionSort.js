@@ -1,3 +1,5 @@
+// Insertion sort: O(n^2)
+
 function insertionSort(numList) {
     console.log('Before: ' + numList + '\n')
     for (let i = 1; i < numList.length; i++) {

@@ -1,3 +1,5 @@
+// Merge sort: O(nLogn)
+
 //Split a list into two pieces
 function split(numList) {
     let midpoint = numList.length / 2
