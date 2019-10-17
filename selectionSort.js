@@ -37,13 +37,11 @@ function swap(arr, a, b) {
     arr[b] = temp
 }
 
-function selectionSort(arr) {
-    let subarray = 0  //index of sorted subarray
-    let stop = arr.length  //Index to stop sorting
-    
-    //Cycle through each position of the array, increasing subarray with each pass
-    while (subarray != stop) {  
-        lowest = subarray  //Current index of lowest value in unsorted subarray
+function selectionSort(arr) {  
+    //Cycle through each position of the array, increasing sorted subarray with each pass
+    for(let subarray = 0; subarray < arr.length; subarray++) { 
+        
+        let lowest = subarray  //Current index of lowest value in unsorted subarray
         console.log("arr is: " + arr + " - subarray at position: " + subarray)
 
         //Find lowest value in unsorted subarray to swap with
@@ -62,9 +60,6 @@ function selectionSort(arr) {
         else {
             console.log("arr[subarray] = arr[lowest] (" + arr[lowest] + ") , no swap needed\n")
         }
-
-        //Incease sorted subarray
-        subarray++
     }
     return arr
 }
