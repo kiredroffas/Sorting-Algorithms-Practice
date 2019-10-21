@@ -53,7 +53,7 @@ function selectionSort(arr) {
         }
 
         //Swap lowest value with value at index subarray, if neccessary
-        if (arr[lowest] != arr[subarray]) {
+        if (arr[lowest] !== arr[subarray]) {
             console.log(arr[lowest] + " is lowest unsorted value, swapping " + arr[lowest] + ' with ' + arr[subarray] + "\n")
             swap(arr, lowest, subarray)
         }
